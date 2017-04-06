@@ -1,0 +1,183 @@
+<!doctype html>
+<html class="no-js" lang="ar-arabic">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Changa|Gloria+Hallelujah|Indie+Flower|Pacifico|Dosis" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <title>Mostafa Hesham portfolio</title>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script>
+            $(document).ready(function() {
+                $("#cf7_controls").on('click', 'span', function() {
+                    $("#cf7 img").removeClass("opaque");
+
+                    var newImage = $(this).index();
+
+                    $("#cf7 img").eq(newImage).addClass("opaque");
+
+                    $("#cf7_controls span").removeClass("selected");
+                    $(this).addClass("selected");
+                });
+            });
+        </script>
+        <div class="container side-info ">
+
+            <div class="side-info-div">
+        <img src="img/mostafa.jpg" class="mostafa">
+            <h1>Mostafa Hesham</h1>
+                <p class="side-paragraph text-center">
+                    Hello and welcome to
+                    my personal portfolio
+                    feel free to see all of
+                    my projects.
+                </p>
+                <p class="side-paragraph-ar texr-center">
+                                                                                           مرحبا بكم فى موقعى الخاص اتمنى
+                    ان ينال اعجابكم وان تنال اعمالى
+                    اعجابكم ايضا
+
+                </p>
+
+
+            </div>
+            <div class="buttons">
+            <a href="#about" class="btn  ">About</a>
+            <a href="#projects" class="btn ">Projects</a>
+            <a href="#contact" class="btn ">Contact</a>
+            </div>
+            <div class="social-icons text-center">
+
+                <a href="https://www.facebook.com/m.hesham1?ref=bookmarks" class="fa fa-facebook" ></a>
+                <a href="https://twitter.com/mhesham32" class="fa fa-twitter"></a>
+                <a href="https://github.com/mhesham32" class="fa fa-github"></a>
+                <a href="https://medium.com/@mostafahesham_47159" class="fa fa-medium"></a>
+            </div>
+
+
+        </div>
+        <div class="container main">
+            <h1 style="font-family: 'Pacifico', cursive; color:white ; font-size: 70px; text-shadow: 5px 5px #478589;
+" class="header text-center">Mostafa Hesham </h1>
+            <h1 class="tab-head">Projects</h1>
+            <div id="projects" class="projects jumbotron works">
+
+                <div class="dev">
+                    <h1 class="text-center">Development projects</h1>
+
+                    <a class="mostafa-hesham" href="https://mhesham32.github.io/">
+                        <img src="img/portfolio.jpg" class="mostafa-project " alt="My old portfolio"/>
+
+                    </a>
+
+                        <div class="text text-center">My old portfolio</div>
+
+
+
+                </div>
+                <div class="photography">
+                    <h1 class="text-center">Photography</h1>
+                    <div id="cf7" class="shadow">
+                        <a href="https://www.facebook.com/Camerateamm">  <img class="opaque" src="img/1.jpg"/></a>
+                        <a href="https://www.facebook.com/Camerateamm"><img src="img/2.jpg" class="opaque"> </a>
+                        <a href="https://www.facebook.com/Camerateamm"><img src="img/3.jpg" class="opaque"> </a>
+                    </div>
+                    <p id="cf7_controls">
+                        <span class="selected">Image 1</span>
+                        <span>Image 2</span>
+                        <span>Image 3</span>
+
+                    </p>
+
+
+                </div>
+                </div>
+            <h1 class="tab-head"> About</h1>
+            <div id="about" class="about jumbotron works">
+                <h1 class="text-center"> about me </h1>
+
+
+               <p class="text-center">
+                   I Mostafa,21 years old<br>
+                    from Egypt I am a front-end <br>
+                    web developer i started to learn web development<br>
+                    about 40 days ago i hope i can teach people who want to learn.
+                </p>
+
+
+
+
+            </div>
+            <h1 class="tab-head">Contact</h1>
+            <div id="contact" class="contact jumbotron works">
+                <h1 class="text-center">contact me</h1>
+                <form action="http://formspree.io/m.hesham032@gmail.com" method="post">
+                    <div class="input-group ">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="name" type="text" class="form-control" name="name" placeholder=" Your Name">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Your Email">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"> <i class="glyphicon glyphicon-envelope"></i> message</span>
+                        <input id="msg" type="text" class="form-control" name="msg" placeholder="your message">
+                    </div>
+                    <div id="button">
+                        <button class="btn btn-primary ">submit</button>
+                    </div>
+                </form>
+
+
+            </div>
+
+            <p class="copyright text-center">Mostafa Hesham ©</p>
+
+
+
+
+
+
+
+
+        </div>
+
+        <!-- Add your site or application content here -->
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','Mostafa-Hesham-portfolio','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
